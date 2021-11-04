@@ -17,9 +17,9 @@ spring:
       routes:
         - id: user-service
           uri: lb://user-service
-          predicatea:
+          predicates:
             - Path=/v1/user/**
         - id: car-service
           uri: lb://car-service
-          predicatea:
+          predicates:
             - Path=/v1/car/**
